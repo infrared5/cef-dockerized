@@ -19,7 +19,7 @@ announce "Environment was set to"
 env
 
 announce "Running: python /app/automate/automate-git.py --download-dir=/app/chromium_git --depot-tools-dir=/app/depot_tools ${extra_automate_args}"
-python /app/automate/automate-git.py --download-dir=/app/chromium_git --depot-tools-dir=/app/depot_tools --build-target=cefsimple ${extra_automate_args}
+python /app/automate/automate-git.py --download-dir=/app/chromium_git --depot-tools-dir=/app/depot_tools --build-target=cefsimple --force-distrib ${extra_automate_args}
 
 date=$(date +'%Y.%m.%dT%H:%M:%S')
 archive_location="${archive_subpath}/cef-chromium_git-${arch}-${date}.7z"
